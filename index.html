@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span style="color: aqua;">FACTI</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span style="color: aqua;">Francis</span><br> From Tanzania</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.png" alt="">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p>
+                        I am Francis Madama, a Web Systems Engineer (Custom Software Engineer) specializing in Pure
+                        Code.
+                        Unlike others who use templates, I build systems from scratch using HTML, CSS, JavaScript, and
+                        PHP. My goal is to
+                        create websites and apps with incredible speed, top-notch security, and a unique design tailored
+                        to your business
+                        needs.
+                    </p>
+                    <br>
+                    <p>
+                        Why work with me?<br>
+                        <strong style="color: aqua;"> Performance:</strong> My code is lightweight and free of
+                        unnecessary clutter.<br>
+                        <strong style="color: aqua;">SEO Optimized:</strong> I make your website appear on Google’s
+                        first page.<br>
+                        <strong style="color: aqua;">Result Oriented:</strong> I don’t just build websites; I create a
+                        system that drives customers to your business.
+                    </p>
+                    <br>
+                    <p>"My word is Code, and My Code is Value."</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>WebDevelopment/WebApp</span><br>Design Web/Web Apps</li>
+                            <li><span>Pure Code(custom code)</span><br>HTML5, CSS3, JS, PHP & SQL</li>
+                            <li><span>SEO Optimization</span><br>Publish Your website</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Not Yet Work</span><br>Just own Projects</li>
+                            <li><span>Mini,Medium & Pro Own Projects</span><br>Just Own Projects</li>
+                            <li><span>Team Work</span><br>Practising Projects with my team at home</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>IAA University</span><br>Diploma in Computer science</li>
+                            <li><span>Alison, Udemy & Youtube</span><br>Self Taught skills</li>
+                            <li><span>Code Challages</span><br>Code Challages and Practices online</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----services     -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>“Design creates culture. Culture shapes values. Values determine the future.”</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web App</h2>
+                    <p> “Design is not just what it looks like and feels like. Design is how it works.”</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <h2>SEO</h2>
+                    <p>Supercharge your online business with the help of SEO strategies.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio  -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/1.png" alt="">
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>The best things in life are the packages waiting on their doorstep</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/2.png" alt="">
+                    <div class="layer">
+                        <h3>Business Website</h3>
+                        <p>I don’t just build websites; I create a system that drives customers to your business</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/3.png" alt="">
+                    <div class="layer">
+                        <h3>School Website</h3>
+                        <p>Another day, another reason to be proud of your community</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.instagram.com/" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- contact  -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> factifrancis@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +255 719 921 165</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://github.com/Facti1"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.tiktok.com/@factifrancis?_r=1&_t=ZS-94E4fvzKbwb"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://x.com/FrancisAbdul3"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="Message Facti on WhatsApp. https://wa.me/255719921565"><i
+                                class="fa-brands fa-square-whatsapp"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download My Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Enter Your Message Here"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; Facti Francis. | Made by Pure coder Francis</p>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
